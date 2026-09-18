@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Information for relying parties about Equinor's work with the EU Digital Identity (EUDI) Wallet sandbox hosted by Digdir." />
+  <title>Equinor &amp; the EUDI Wallet Sandbox (Digdir)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">EQ</span>
+        <span class="brand-text">Equinor &middot; EUDI Wallet Sandbox</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#relying-parties">Relying parties</a></li>
+          <li><a href="#equinor-role">Equinor's role</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact &amp; FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container">
+        <p class="eyebrow">EU Digital Identity Wallet &middot; Norwegian sandbox</p>
+        <h1>Equinor and the EUDI Wallet sandbox hosted by Digdir</h1>
+        <p class="lead">
+          This site informs relying parties about Equinor's exploration of the
+          European Digital Identity (EUDI) Wallet using the national sandbox
+          operated by the Norwegian Digitalisation Agency (Digdir).
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#relying-parties">For relying parties</a>
+          <a class="btn btn-ghost" href="#overview">Learn more</a>
+        </div>
+        <p class="disclaimer">
+          Sandbox environment for testing and experimentation only &mdash; not a
+          production identity service.
+        </p>
+      </div>
+    </section>
+
+    <section id="overview" class="section">
+      <div class="container">
+        <h2>Overview</h2>
+        <p>
+          The <strong>EU Digital Identity (EUDI) Wallet</strong> is a framework
+          under the revised eIDAS regulation that lets citizens and organisations
+          store and present verified credentials &mdash; such as identity
+          attributes, diplomas, or professional qualifications &mdash; from a
+          secure digital wallet on their own device.
+        </p>
+        <p>
+          <strong>Digdir</strong> (the Norwegian Digitalisation Agency) operates a
+          national <strong>sandbox</strong> that allows public and private
+          organisations to experiment with wallet-based flows: issuing
+          credentials, requesting attributes, and verifying presentations in a
+          controlled, non-production environment.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>The wallet</h3>
+            <p>A user-controlled app that holds verifiable credentials and shares only what a service needs.</p>
+          </article>
+          <article class="card">
+            <h3>The sandbox</h3>
+            <p>Digdir's test environment for issuers and relying parties to trial EUDI flows safely.</p>
+          </article>
+          <article class="card">
+            <h3>Equinor's pilot</h3>
+            <p>Hands-on evaluation of how wallet-based identity could support Equinor use cases.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="relying-parties" class="section section-alt">
+      <div class="container">
+        <h2>What relying parties need to know</h2>
+        <p>
+          A <strong>relying party</strong> is any service that requests and
+          verifies credentials presented from a user's wallet. If you are
+          integrating with the Digdir sandbox alongside Equinor, the following
+          applies.
+        </p>
+
+        <ol class="steps">
+          <li>
+            <h3>Register with the Digdir sandbox</h3>
+            <p>Onboard your service as a relying party and obtain sandbox client credentials and endpoints.</p>
+          </li>
+          <li>
+            <h3>Define the credentials you require</h3>
+            <p>Specify which attributes or credential types your service will request during a presentation.</p>
+          </li>
+          <li>
+            <h3>Implement the presentation flow</h3>
+            <p>Use the OpenID for Verifiable Presentations (OpenID4VP) protocol to request and receive credentials.</p>
+          </li>
+          <li>
+            <h3>Verify and validate</h3>
+            <p>Check signatures, trust chains, and freshness before trusting the presented data.</p>
+          </li>
+        </ol>
+
+        <div class="callout">
+          <h3>Important</h3>
+          <p>
+            All data and credentials in the sandbox are for testing purposes. Do
+            not use production personal data, and do not treat sandbox
+            verifications as legally binding.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="equinor-role" class="section">
+      <div class="container">
+        <h2>Equinor's role &amp; goals</h2>
+        <p>
+          Equinor participates in the Digdir sandbox to understand how the EUDI
+          Wallet could improve secure, privacy-preserving identity and credential
+          exchange across our digital services.
+        </p>
+        <ul class="goals">
+          <li><strong>Evaluate</strong> wallet-based authentication and credential presentation for relevant use cases.</li>
+          <li><strong>Reduce friction</strong> in onboarding and verification while improving user privacy.</li>
+          <li><strong>Assess interoperability</strong> with Norwegian and European identity infrastructure.</li>
+          <li><strong>Share learnings</strong> with partners and relying parties collaborating in the sandbox.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="resources" class="section section-alt">
+      <div class="container">
+        <h2>Technical resources</h2>
+        <p>External references for teams building against the sandbox.</p>
+        <div class="resource-grid">
+          <a class="resource" href="https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-implementation" target="_blank" rel="noopener noreferrer">
+            <h3>EUDI Wallet (European Commission)</h3>
+            <p>Policy background and implementation of the EU Digital Identity Wallet.</p>
+          </a>
+          <a class="resource" href="https://www.digdir.no/" target="_blank" rel="noopener noreferrer">
+            <h3>Digdir</h3>
+            <p>The Norwegian Digitalisation Agency operating the national sandbox.</p>
+          </a>
+          <a class="resource" href="https://github.com/eu-digital-identity-wallet" target="_blank" rel="noopener noreferrer">
+            <h3>EUDI Wallet reference implementation</h3>
+            <p>Open-source reference components and specifications on GitHub.</p>
+          </a>
+          <a class="resource" href="https://openid.net/specs/openid-4-verifiable-presentations-1_0.html" target="_blank" rel="noopener noreferrer">
+            <h3>OpenID4VP</h3>
+            <p>OpenID for Verifiable Presentations &mdash; the presentation protocol.</p>
+          </a>
+        </div>
+        <p class="note">
+          Links point to third-party sites and are provided for convenience.
+          Verify sandbox-specific onboarding details directly with Digdir.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact &amp; FAQ</h2>
+
+        <div class="faq">
+          <details>
+            <summary>Is this a production identity service?</summary>
+            <p>No. This describes work in Digdir's sandbox, intended for testing and experimentation only.</p>
+          </details>
+          <details>
+            <summary>Can my organisation join the sandbox?</summary>
+            <p>Onboarding is managed by Digdir. Contact them to register your service as a relying party or issuer.</p>
+          </details>
+          <details>
+            <summary>What protocols are used?</summary>
+            <p>Wallet flows typically use OpenID4VCI for issuance and OpenID4VP for presentation, per the EUDI reference architecture.</p>
+          </details>
+          <details>
+            <summary>Who do I contact at Equinor?</summary>
+            <p>Reach out to the Equinor team coordinating this pilot through your usual Equinor contact.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Equinor. Informational site for the EUDI Wallet sandbox pilot.</p>
+      <p class="footer-note">Sandbox content is for testing purposes only.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
