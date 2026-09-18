@@ -62,11 +62,7 @@ a { color: var(--eq-accent); }
   min-height: 64px;
 }
 .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--eq-ink); font-weight: 700; }
-.brand-mark {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 34px; height: 34px; border-radius: 8px;
-  background: var(--eq-red); color: #fff; font-size: 0.8rem; letter-spacing: 0.02em;
-}
+.brand-logo { height: 40px; max-height: 40px; width: auto; max-width: 220px; object-fit: contain; display: block; }
 .brand-text { font-size: 0.98rem; }
 
 .nav-list {
